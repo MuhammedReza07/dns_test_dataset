@@ -5,4 +5,4 @@ This is a collection of domain names (taken from [URLchecker by Ben Sooter](http
 The queries used in the project have been generated using my own DNS resolver, which can be found in [the following repository](https://github.com/MuhammedReza07/dns_resolver), and were generated to be able to test DNS string decoding since I was unable to find an existing dataset for this purpose.
 
 Note that the list of domain names (domain_list.txt) is licensed under the MIT licence and thus includes a copy of the
-[original license](https://github.com/bensooter/URLchecker/blob/master/LICENSE.md) which should be taken into account when parsing the file. Additionally, it is suggested that the query responses are inspected using some Hex editor, since a text editor will display jibberish when opening a binary file like responses.txt.
+original license which should be taken into account when parsing the file.
