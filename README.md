@@ -4,7 +4,7 @@ This is a collection of domain names (taken from [URLchecker by Ben Sooter](http
 
 The queries used in the project have been generated using my own DNS resolver, which can be found in [the following repository](https://github.com/MuhammedReza07/dns_resolver), and were generated to be able to test DNS string decoding since I was unable to find an existing dataset for this purpose.
 
-If the user wishes to manually inspect the files, it is suggested to do so using some Hex Editor to avoid the jibberish that would be displayed by a text editor inspecting binary files. When parsing the query responses, a simple solution would be to treat the text file as a sequence of response packets and reading is be done in 512 byte chunks.
+If the user wishes to manually inspect the files, it is suggested to do so using some Hex Editor to avoid the jibberish that would be displayed by a text editor inspecting binary files. It is possible to parse the responses by iterating over the files of the /responses directory and reading the files' content as desired.
 
 ## About the data
 The query responses included in the dataset have the following form:
