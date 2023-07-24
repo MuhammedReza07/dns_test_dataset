@@ -10,19 +10,19 @@ If the user wishes to manually inspect the files, it is suggested to do so using
 The query responses included in the dataset have the following form:
 
     Header:
-        ID: 0,              Packet Identifier
-        QR: 1,              Query Response
-        OPCODE: 0,          Operation Code
-        AA: 0,              Authoritative Answer
-        TC: 0,              Truncated Message
-        RD: 1,              Recursion Desired
-        RA: 1,              Recursion Available
-        Z: 0,               Z (no DNSSEC)
-        RCODE: 0,           Response Code
-        QDCOUNT: 1,         Question Count
-        ANCOUNT: uint16,    Answer Count
-        NSCOUNT: 0,         Authority Count
-        ARCOUNT: 0,         Additional Count
+        ID: 0,                      Packet Identifier
+        QR: 1,                      Query Response
+        OPCODE: 0,                  Operation Code
+        AA: 0,                      Authoritative Answer
+        TC: 0,                      Truncated Message
+        RD: 1,                      Recursion Desired
+        RA: 1,                      Recursion Available
+        Z: 0,                       Z (no DNSSEC)
+        RCODE: 0,                   Response Code
+        QDCOUNT: 1,                 Question Count
+        ANCOUNT: uint16,            Answer Count
+        NSCOUNT: 0,                 Authority Count
+        ARCOUNT: 0,                 Additional Count
     Question Section:
         Question:
             QNAME: <domain name>,   Domain name from domain_list.txt
