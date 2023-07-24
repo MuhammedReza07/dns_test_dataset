@@ -41,3 +41,5 @@ The query responses included in the dataset have the following form:
         Empty,
     Additional Section:
         Empty
+
+Note that trailing zero-bytes are included in each packet file to enable direct conversion to a DNS packet of length 512 bytes without having to manually pad every file.
