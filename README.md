@@ -8,6 +8,5 @@ If the user wishes to manually inspect the files, it is suggested to do so using
 
 ## About the data
 The query responses included in the dataset have the following form:
-´´´
-Lorem ipsum
-´´´
+
+    Lorem ipsum
