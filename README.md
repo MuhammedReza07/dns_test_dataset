@@ -11,18 +11,18 @@ The query responses included in the dataset have the following form:
 
     Header:
         ID: 0,                      Packet Identifier
-        QR: 1,                      Query Response
-        OPCODE: 0,                  Operation Code
-        AA: 0,                      Authoritative Answer
-        TC: 0,                      Truncated Message
-        RD: 1,                      Recursion Desired
-        RA: 1,                      Recursion Available
+        QR: 1,                      Query Response (Response)
+        OPCODE: 0,                  Operation Code (QUERY)
+        AA: 0,                      Authoritative Answer (No)
+        TC: 0,                      Truncated Message (No)
+        RD: 1,                      Recursion Desired (Yes)
+        RA: 1,                      Recursion Available (Yes)
         Z: 0,                       Z (no DNSSEC)
-        RCODE: 0,                   Response Code
-        QDCOUNT: 1,                 Question Count
-        ANCOUNT: uint16,            Answer Count
-        NSCOUNT: 0,                 Authority Count
-        ARCOUNT: 0,                 Additional Count
+        RCODE: 0,                   Response Code (Success)
+        QDCOUNT: 1,                 Question Count (Constant, 1)
+        ANCOUNT: uint16,            Answer Count (Variable)
+        NSCOUNT: 0,                 Authority Count (None, 0)
+        ARCOUNT: 0,                 Additional Count (None, 0)
     Question Section:
         Question:
             QNAME: <domain name>,   Domain name from domain_list.txt
@@ -33,7 +33,7 @@ The query responses included in the dataset have the following form:
             NAME: <domain name>,    Domain name from domain_list.txt
             TYPE: 1,                Type A resource record, an IPv4 address
             CLASS: 1,               Class IN query, for Internet
-            TTL: uint32,            Time to live in seconds for cached RR
+            TTL: uint32,            Time to live in seconds for cached RR 
             RDLENGTH: 4,            Length of the RR data in bytes
             RDATA: <IPv4 address>,  The RR data
         ... (ANCOUNT RR:s)
