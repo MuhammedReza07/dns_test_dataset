@@ -34,7 +34,7 @@ The query responses included in the dataset have the following form:
             TYPE: 1,                Type A resource record, an IPv4 address
             CLASS: 1,               Class IN query, for Internet
             TTL: uint32,            Time to live in seconds for cached RR
-            RDLENGTH: 32,           Length of the RR data in bits
+            RDLENGTH: 4,            Length of the RR data in bytes
             RDATA: <IPv4 address>,  The RR data
         ... (ANCOUNT RR:s)
     Authority Section: Empty,
