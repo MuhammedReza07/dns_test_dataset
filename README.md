@@ -7,3 +7,7 @@ The queries used in the project have been generated using my own DNS resolver, w
 If the user wishes to manually inspect the files, it is suggested to do so using some Hex Editor to avoid the jibberish that would be displayed by a text editor inspecting binary files. When parsing the query responses, a simple solution would be to treat the text file as a sequence of response packets and reading is be done in 512 byte chunks.
 
 ## About the data
+The query responses included in the dataset have the following form:
+´´´
+Lorem ipsum
+´´´
