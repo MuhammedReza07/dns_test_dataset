@@ -9,4 +9,33 @@ If the user wishes to manually inspect the files, it is suggested to do so using
 ## About the data
 The query responses included in the dataset have the following form:
 
-    Lorem ipsum
+    Header:
+        ID: 0,              Packet Identifier
+        QR: 1,              Query Response
+        OPCODE: 0,          Operation Code
+        AA: 0,              Authoritative Answer
+        TC: 0,              Truncated Message
+        RD: 1,              Recursion Desired
+        RA: 1,              Recursion Available
+        Z: 0,               Z (no DNSSEC)
+        RCODE: 0,           Response Code
+        QDCOUNT: 1,         Question Count
+        ANCOUNT: uint16,    Answer Count
+        NSCOUNT: 0,         Authority Count
+        ARCOUNT: 0,         Additional Count
+    Question Section:
+        Question:
+            QNAME: <domain name>,   Domain name from domain_list.txt
+            QTYPE: 1,               Type A resource record, an IPv4 address
+            QCLASS: 1,              Class IN query, for Internet
+    Answer Section:
+        Resource Record:
+            NAME: <domain name>,    Domain name from domain_list.txt
+            TYPE: 1,                Type A resource record, an IPv4 address
+            CLASS: 1,               Class IN query, for Internet
+            TTL: uint32,            Time to live in seconds for cached RR
+            RDLENGTH: 32,           Length of the RR data in bits
+            RDATA: <IPv4 address>,  The RR data
+        ... (ANCOUNT RR:s)
+    Authority Section: Empty,
+    Additional Section: Empty
