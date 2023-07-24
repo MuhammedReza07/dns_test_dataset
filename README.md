@@ -37,5 +37,7 @@ The query responses included in the dataset have the following form:
             RDLENGTH: 4,            Length of the RR data in bytes
             RDATA: <IPv4 address>,  The RR data
         ... (ANCOUNT RR:s)
-    Authority Section: Empty,
-    Additional Section: Empty
+    Authority Section:
+        Empty,
+    Additional Section:
+        Empty
